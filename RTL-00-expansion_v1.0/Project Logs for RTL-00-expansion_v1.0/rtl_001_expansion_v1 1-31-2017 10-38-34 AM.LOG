@@ -1,0 +1,15 @@
+Added Component: Designator=J???(HDR1X19)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "brief description"; Value = "Header, 19-Pin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "datasheet"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Device Type"; Value = "CONNECTOR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "dimension"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "manufacturer"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "manufacturer (alternative)"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "notes"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "Header, 19-Pin(2.54)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Type"; Value = "through hole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "part number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "pin forming"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Revision"; Value = "17-Jul-2002: Re-released for DXP Platform."; VariantName = "[No Variations]"
+Added Member To Class: ClassName=rtl_001_expansion_v1.0 Member=Component J??? Header 19

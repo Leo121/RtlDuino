@@ -1,0 +1,36 @@
+Added Component: Designator=J1(HEADER 4X1)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "brief description"; Value = "Header, 4-Pin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "datasheet"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Device Type"; Value = "CONNECTOR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "dimension"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "manufacturer"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "manufacturer (alternative)"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "notes"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "Header, 4-Pin(2.54mm)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Type"; Value = "through hole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "part number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "pin forming"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=J2(HEADER 4X1)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "brief description"; Value = "Header, 4-Pin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "datasheet"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Device Type"; Value = "CONNECTOR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "dimension"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "manufacturer"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "manufacturer (alternative)"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "notes"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "Header, 4-Pin(2.54mm)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Type"; Value = "through hole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "part number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "pin forming"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=VCC Pin=J1-1
+Added Pin To Net: NetName=SWCLK Pin=J1-2
+Added Pin To Net: NetName=GND Pin=J1-3
+Added Pin To Net: NetName=SWDIO Pin=J1-4
+Added Pin To Net: NetName=VCC Pin=J2-1
+Added Pin To Net: NetName=LOG_TX Pin=J2-2
+Added Pin To Net: NetName=GND Pin=J2-3
+Added Pin To Net: NetName=LOG_RX Pin=J2-4
+Added Member To Class: ClassName=rtl_001_expansion_v1.0 Member=Component J1 Header 4
+Added Member To Class: ClassName=rtl_001_expansion_v1.0 Member=Component J2 Header 4

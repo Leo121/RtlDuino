@@ -1,0 +1,832 @@
+<!DOCTYPE html> 
+<html class="no-js" lang="zh-TW">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="google-site-verification" content="nLikjHqvEg2BhmvUBGjpZow7RZdjbGCnhitvF8A8l9Y" />
+        <meta name="google-site-verification" content="gzr8b0ZYzUPHBpzyAcemMK0nxkYi3mgnFkFBQDLctUg" />
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="http://www.amebaiot.com/xmlrpc.php">
+	
+	<title>Access permission denied &#8211; Realtek IoT/Arduino Solution</title>
+<script type="text/javascript">var ajaxurl = "http://www.amebaiot.com/wp-admin/admin-ajax.php",ap_nonce 	= "501907a891",ap_max_tags = "",disable_hover_card = "1"</script>			<script type="text/javascript">
+				var piereg_pass_str_meter_string = new Array(
+															 'Strength Indicator',
+															 'Very weak',
+															 'Weak',
+															 'Medium',
+															 'Strong',
+															 'Mismatch'
+															 );
+				
+				var piereg_validation_engn = new Array(
+													 'none',
+													 '* This field is required',
+													 '* Please select an option',
+													 '* This checkbox is required',
+													 '* Both date range fields are required',
+													 '* Field must equal test',
+													 '* Invalid ',
+													 'Date Range',
+													 'Date Time Range',
+													 '* Minimum ',
+													 ' characters required',
+													 '* Maximum ',
+													 ' characters allowed',
+													 '* You must fill one of the following fields',
+													 '* Minimum value is ',
+													 '* Date prior to ',
+													 '* Date past ',
+													 ' options allowed',
+													 '* Please select ',
+													 ' options',
+													 '* Fields do not match',
+													 '* Invalid credit card number',
+													 '* Invalid phone number',
+													 '* Allowed Format (xxx) xxx-xxxx',
+													 '* Minimum 10 Digits starting with Country Code',
+													 '* Invalid email address',
+													 '* Not a valid integer',
+													 '* Invalid number',
+													 '* Invalid month',
+													 '* Invalid day',
+													 '* Invalid year',
+													 '* Invalid file extension',
+													 '* Invalid date, must be in YYYY-MM-DD format',
+													 '* Invalid IP address',
+													 '* Invalid URL',
+													 '* Numbers only',
+													 '* Letters only',
+													 '* No special characters allowed',
+													 '* This user is already taken',
+													 '* Validating, please wait',
+													 '* This username is available',
+													 '* This user is already taken',
+													 '* Validating, please wait',
+													 '* This name is already taken',
+													 '* This name is available',
+													 '* Validating, please wait',
+													 '* This name is already taken',
+													 '* Please input HELLO',
+													 '* Invalid Date',
+													 '* Invalid Date or Date Format',
+													 'Expected Format: ',
+													 'mm/dd/yyyy hh:mm:ss AM|PM or ',
+													 'yyyy-mm-dd hh:mm:ss AM|PM',
+													 '* Invalid Username',
+													 '* Invalid File',
+													 '* Maximum value is ',
+													 '* Alphabetic Letters only'
+													 );
+			</script>
+						<script type="text/javascript">
+				var piereg_current_date		= '2017';
+				var piereg_startingDate		= '1901';
+				var piereg_endingDate		= '2016';
+			</script>
+			<script>document.documentElement.className = document.documentElement.className.replace("no-js","js");</script>
+<link rel="alternate" type="application/rss+xml" title="Realtek IoT/Arduino Solution &raquo; Feed" href="http://www.amebaiot.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Realtek IoT/Arduino Solution &raquo; Comments Feed" href="http://www.amebaiot.com/comments/feed/" />
+<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,300italic,300,400italic,600&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/www.amebaiot.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.1"}};
+			!function(a,b,c){function d(a){var c,d=b.createElement("canvas"),e=d.getContext&&d.getContext("2d");return e&&e.fillText?(e.textBaseline="top",e.font="600 32px Arial","flag"===a?(e.fillText(String.fromCharCode(55356,56806,55356,56826),0,0),d.toDataURL().length>3e3):"diversity"===a?(e.fillText(String.fromCharCode(55356,57221),0,0),c=e.getImageData(16,16,1,1).data.toString(),e.fillText(String.fromCharCode(55356,57221,55356,57343),0,0),c!==e.getImageData(16,16,1,1).data.toString()):("simple"===a?e.fillText(String.fromCharCode(55357,56835),0,0):e.fillText(String.fromCharCode(55356,57135),0,0),0!==e.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='wpfb-css'  href='//www.amebaiot.com/wp-content/plugins/wp-filebase/wp-filebase.css?t=1457688421&#038;ver=3.4.1' type='text/css' media='all' />
+<link rel='stylesheet' id='grid-columns-css'  href='http://www.amebaiot.com/wp-content/plugins/grid-columns/css/columns.min.css?ver=20130123' type='text/css' media='all' />
+<link rel='stylesheet' id='ap-style-css'  href='http://www.amebaiot.com/wp-content/plugins/anspress-question-answer/theme/default/css/main.css?ver=2.4.4' type='text/css' media='all' />
+<style id='ap-style-inline-css' type='text/css'>
+
+        #anspress .ap-q-cells{
+                margin-left: 60px;
+        }
+        #anspress .ap-a-cells{
+                margin-left: 60px;
+        }#anspress .ap-comment-content{
+                margin-left: 40px;
+        }
+</style>
+<link rel='stylesheet' id='ap-fonts-css'  href='http://www.amebaiot.com/wp-content/plugins/anspress-question-answer/theme/default/fonts/style.css?ver=2.4.4' type='text/css' media='all' />
+<link rel='stylesheet' id='categories_for_anspress_css-css'  href='http://www.amebaiot.com/wp-content/plugins/categories-for-anspress/theme/css/categories.css?ver=4.4.1' type='text/css' media='all' />
+<link rel='stylesheet' id='tags_css-css'  href='http://www.amebaiot.com/wp-content/plugins/tags-for-anspress/theme/css/tags.css?ver=4.4.1' type='text/css' media='all' />
+<link rel='stylesheet' id='ap-responsive-css'  href='http://www.amebaiot.com/wp-content/plugins/anspress-question-answer/theme/default/css/responsive.css?ver=2.4.4' type='text/css' media='all' />
+<link rel='stylesheet' id='ap-overrides-css'  href='http://www.amebaiot.com/wp-content/plugins/anspress-question-answer/theme/default/css/overrides.css?ver=2.4.4' type='text/css' media='all' />
+<link rel='stylesheet' id='bbp-default-css'  href='http://www.amebaiot.com/wp-content/plugins/bbpress/templates/default/css/bbpress.css?ver=2.5.7-5693' type='text/css' media='screen' />
+<link rel='stylesheet' id='pie_front_css-css'  href='http://www.amebaiot.com/wp-content/plugins/pie-register/css/front.css?ver=2.0' type='text/css' media='all' />
+<link rel='stylesheet' id='pie_validation_css-css'  href='http://www.amebaiot.com/wp-content/plugins/pie-register/css/validation.css?ver=2.0' type='text/css' media='all' />
+<link rel='stylesheet' id='rs-plugin-settings-css'  href='http://www.amebaiot.com/wp-content/plugins/revslider/rs-plugin/css/settings.css?ver=4.6.5' type='text/css' media='all' />
+<style id='rs-plugin-settings-inline-css' type='text/css'>
+.tp-caption a{color:#ff7302;text-shadow:none;-webkit-transition:all 0.2s ease-out;-moz-transition:all 0.2s ease-out;-o-transition:all 0.2s ease-out;-ms-transition:all 0.2s ease-out}.tp-caption a:hover{color:#ffa902}
+</style>
+<link rel='stylesheet' id='tp-titillium-css'  href='http://fonts.googleapis.com/css?family=Titillium+Web%3A200%2C300%2C600&#038;ver=4.4.1' type='text/css' media='all' />
+<link rel='stylesheet' id='psk_s2msfb-css'  href='http://www.amebaiot.com/wp-content/plugins/s2member-secure-file-browser//css/jqueryFileTree.min.css?ver=4.4.1' type='text/css' media='all' />
+<link rel='stylesheet' id='jquery.prettyPhoto-css'  href='http://www.amebaiot.com/wp-content/plugins/s2member-secure-file-browser//css/prettyPhoto.css?ver=4.4.1' type='text/css' media='all' />
+<link rel='stylesheet' id='scfp-form-repeater-css-css'  href='http://www.amebaiot.com/wp-content/plugins/wcp-contact-form/agp-core/assets/repeater/css/style.css?ver=4.4.1' type='text/css' media='all' />
+<link rel='stylesheet' id='scfp-css-css'  href='http://www.amebaiot.com/wp-content/plugins/wcp-contact-form/assets/css/style.css?ver=4.4.1' type='text/css' media='all' />
+<link rel='stylesheet' id='tt-easy-google-fonts-css'  href='http://fonts.googleapis.com/css?family=Titillium+Web%3Aregular%2C600%7CSource+Code+Pro%3Aregular&#038;subset=latin%2Call%2Clatin-ext&#038;ver=4.4.1' type='text/css' media='all' />
+<link rel='stylesheet' id='style-css'  href='http://www.amebaiot.com/wp-content/themes/hueman/style.css?ver=4.4.1' type='text/css' media='all' />
+<link rel='stylesheet' id='responsive-css'  href='http://www.amebaiot.com/wp-content/themes/hueman/responsive.css?ver=4.4.1' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css'  href='http://www.amebaiot.com/wp-content/plugins/js_composer/assets/lib/font-awesome/css/font-awesome.min.css?ver=4.4.1.1' type='text/css' media='screen' />
+<link rel='stylesheet' id='wpmu-animate-min-css-css'  href='http://www.amebaiot.com/wp-content/plugins/wordpress-popup/css/animate.min.css?ver=4.4.1' type='text/css' media='all' />
+<link rel='stylesheet' id='ws-plugin--s2member-css'  href='http://www.amebaiot.com/wp-content/plugins/s2member/s2member-o.php?ws_plugin__s2member_css=1&#038;qcABC=1&#038;ver=150311-2258640617' type='text/css' media='all' />
+<link rel='stylesheet' id='UserAccessManagerAdmin-css'  href='http://www.amebaiot.com/wp-content/plugins/user-access-manager/css/uamAdmin.css?ver=1.0' type='text/css' media='screen' />
+<link rel='stylesheet' id='UserAccessManagerLoginForm-css'  href='http://www.amebaiot.com/wp-content/plugins/user-access-manager/css/uamLoginForm.css?ver=1.0' type='text/css' media='screen' />
+<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script>
+<script>window.jQuery || document.write('<script src="http://www.amebaiot.com/wp-includes/js/jquery/jquery.js"><\/script>')</script>
+<script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.2.1/jquery-migrate.min.js'></script>
+<script>window.jQuery.migrateMute || document.write('<script src="http://www.amebaiot.com/wp-includes/js/jquery/jquery-migrate.min.js"><\/script>')</script>
+<script type='text/javascript' src='http://www.amebaiot.com/wp-includes/js/jquery/jquery.form.min.js?ver=3.37.0'></script>
+<script type='text/javascript' src='http://www.amebaiot.com/wp-content/plugins/anspress-question-answer/assets/min/ap-functions.min.js?ver=4.4.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var aplang = {"password_field_not_macthing":"\u5bc6\u78bc\u4e0d\u7b26","password_length_less":"\u5bc6\u78bc\u6700\u5c11\u9700\u8981\u516d\u4f4d\u6578\u9577\u5ea6","not_valid_email":"\u4e0d\u662f\u6b63\u78ba\u7684\u4fe1\u7bb1","username_less":"\u4f7f\u7528\u8005\u540d\u7a31\u81f3\u5c11\u8981\u56db\u500b\u5b57\u6bcd\u6216\u4ee5\u4e0a","username_not_avilable":"\u4f7f\u7528\u8005\u540d\u7a31\u4e0d\u53ef\u4f7f\u7528","email_already_in_use":"Email \u5df2\u5b58\u5728\uff0c\u4f60\u8981\u91cd\u8a2d\u5bc6\u78bc\u55ce\uff1f","loading":"\u8f09\u5165\u4e2d","sending":"\u9001\u51fa\u8acb\u6c42","adding_to_fav":"\u628a\u9019\u500b\u554f\u984c\u52a0\u5230\u6211\u7684\u6700\u611b","voting_on_post":"\u6b63\u5728\u767c\u9001\u4f60\u7684\u6295\u7968","requesting_for_closing":"\u8acb\u6c42\u95dc\u9589\u9019\u500b\u554f\u984c","sending_request":"\u6b63\u5728\u767c\u9001\u8acb\u6c42","loading_comment_form":"\u8f09\u5165\u56de\u61c9\u8868\u55ae","submitting_your_question":"\u6b63\u5728\u767c\u9001\u4f60\u7684\u554f\u984c","submitting_your_answer":"\u6b63\u5728\u767c\u9001\u4f60\u7684\u56de\u7b54","submitting_your_comment":"\u9001\u51fa\u4f60\u7684\u56de\u61c9","deleting_comment":"\u522a\u9664\u56de\u61c9","updating_comment":"\u6b63\u5728\u66f4\u65b0\u56de\u61c9","loading_form":"\u8868\u55ae\u8f09\u5165\u4e2d","saving_labels":"\u5132\u5b58 label","loading_suggestions":"\u5efa\u8b70\u8f09\u5165\u4e2d","uploading_cover":"\u5c01\u9762\u5716\u7247\u4e0a\u50b3\u4e2d","saving_profile":"\u5132\u5b58\u500b\u4eba\u6a94\u6848","sending_message":"\u8a0a\u606f\u767c\u9001\u4e2d","loading_conversation":"\u8f09\u5165\u5c0d\u8a71","loading_new_message_form":"\u8f09\u5165\u65b0\u8a0a\u606f\u8868\u55ae","loading_more_conversations":"\u8f09\u5165\u66f4\u591a\u5c0d\u8a71","searching_conversations":"\u641c\u5c0b\u5c0d\u8a71","loading_message_edit_form":"\u8f09\u5165\u8a0a\u606f\u8868\u55ae","updating_message":"\u66f4\u65b0\u8a0a\u606f","deleting_message":"\u522a\u9664\u8a0a\u606f","uploading":"\u4e0a\u50b3\u4e2d","error":"apicon-x","warning":"apicon-alert","success":"apicon-check","not_valid_response":"Something went wrong in server side, not a valid response."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.amebaiot.com/wp-content/plugins/anspress-question-answer/assets/min/anspress_site.min.js?ver=2.4.4'></script>
+<script type='text/javascript' src='http://www.amebaiot.com/wp-content/plugins/anspress-question-answer/theme/default/js/jquery.peity.min.js?ver=2.4.4'></script>
+<script type='text/javascript' src='http://www.amebaiot.com/wp-content/plugins/anspress-question-answer/theme/default/js/initial.min.js?ver=2.4.4'></script>
+<script type='text/javascript' src='http://www.amebaiot.com/wp-content/plugins/anspress-question-answer/theme/default/js/jquery.scrollbar.min.js?ver=2.4.4'></script>
+<script type='text/javascript' src='http://www.amebaiot.com/wp-content/plugins/anspress-question-answer/theme/default/min/ap.min.js?ver=2.4.4'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var apTagsTranslation = {"deleteTag":"Delete Tag","addTag":"Add Tag","tagAdded":"added to the tags list.","tagRemoved":"removed from the tags list.","suggestionsAvailable":"Suggestions are available. Use the up and down arrow keys to read it."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.amebaiot.com/wp-content/plugins/tags-for-anspress/theme/js/tags_js.js?ver=4.4.1'></script>
+<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js?ver=1.10.4'></script>
+<script type='text/javascript' src='http://www.amebaiot.com/wp-content/plugins/pie-register/js/datepicker.js?ver=2.0'></script>
+<script type='text/javascript' src='http://www.amebaiot.com/wp-content/plugins/pie-register/js/piereg_validation.js?ver=2.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _zxcvbnSettings = {"src":"http:\/\/www.amebaiot.com\/wp-includes\/js\/zxcvbn.min.js"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.amebaiot.com/wp-includes/js/zxcvbn-async.min.js?ver=1.0'></script>
+<script type='text/javascript' src='http://www.amebaiot.com/wp-content/plugins/pie-register/js/pie_password_checker.js?ver=2.0'></script>
+<script type='text/javascript' src='http://www.amebaiot.com/wp-content/plugins/revslider/rs-plugin/js/jquery.themepunch.tools.min.js?ver=4.6.5'></script>
+<script type='text/javascript' src='http://www.amebaiot.com/wp-content/plugins/revslider/rs-plugin/js/jquery.themepunch.revolution.min.js?ver=4.6.5'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var PSK_S2MSFB = {"imgurl":"http:\/\/www.amebaiot.com\/wp-content\/plugins\/s2member-secure-file-browser\/\/img\/","ajaxurl":"http:\/\/www.amebaiot.com\/wp-admin\/admin-ajax.php","nonce":"4654d7f5a5","errorsearch":"Please type some words!","action_get_dir":"psk_s2msfb_get_dir","action_df":"psk_s2msfb_df","action_cf":"psk_s2msfb_cf","action_rf":"psk_s2msfb_rf","action_nf":"psk_s2msfb_nf"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.amebaiot.com/wp-content/plugins/s2member-secure-file-browser//js/jqueryFileTree.min.js?ver=4.4.1'></script>
+<script type='text/javascript' src='http://www.amebaiot.com/wp-content/plugins/wcp-contact-form/agp-core/assets/repeater/js/main.js?ver=4.4.1'></script>
+<script type='text/javascript' src='http://www.amebaiot.com/wp-content/plugins/user-access-manager/js/functions.js?ver=4.4.1'></script>
+<link rel='https://api.w.org/' href='http://www.amebaiot.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.amebaiot.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.amebaiot.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.4.1" />
+<link rel="canonical" href="http://www.amebaiot.com/access-permission-denied/" />
+<link rel='shortlink' href='http://www.amebaiot.com/?p=5783' />
+<link rel="alternate" type="application/json+oembed" href="http://www.amebaiot.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.amebaiot.com%2Faccess-permission-denied%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://www.amebaiot.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.amebaiot.com%2Faccess-permission-denied%2F&#038;format=xml" />
+<script>
+			jQuery(document).ready(function() {
+                                // expand-content-link renamed to expand-cnt-link for compatibility with twentyfourteen theme
+				jQuery(".expand-content-link").removeClass("expand-content-link").addClass("expand-cnt-link");
+				jQuery(".expand-cnt-link").click(function() {
+					jQuery(this).toggleClass("ecf_closed").parent(".exp-col-content-holder").find(".hidden-content").first().stop().slideToggle("slow").css("display","block");
+					return false;
+				});	
+				jQuery(".expand-cnt-link").toggleClass("ecf_closed").parent(".exp-col-content-holder").find(".hidden-content").css("display","none");
+			
+			//images with no float styles , get floated left
+			if(typeof jQuery(".hidden-content > img").attr("float") === "undefined") {
+				jQuery(".hidden-content > img:not([class])").addClass("alignleft");
+			}
+			
+			/*
+			jQuery(".hidden-content").each(function() {
+				if (jQuery(this).find("img").length) {
+					var hiddenContentpLength = jQuery(this).find(".hiddenContentp").text().length;
+						if( hiddenContentpLength < 200 ) {
+							jQuery(this).css("height","150px");
+						}
+				}
+			});
+			*/
+			
+			jQuery(".textwidget > .exp-col-content-holder > .hidden-content > img+p").attr("style","display:inherit !important;");
+			
+			});
+				</script><style>
+			.expand-cnt-link { font-weight:bold; display:block; margin-bottom:.5em; }
+			.expand-cnt-link:before { font-family: "ecf-icons"; content: "\e601  ";  font-size:16px; }
+			.hidden-content { display:block; vertical-align:top}
+			.exp-col-content-holder { margin:15px 0px 15px 0 !important; }
+			.exp-col-content-holder a { display:inline; }
+			.exp-col-content-holder+p, .exp-col-content-holder img+p, .expand-cnt-link+p { display:none !important; }
+			.ecf_closed:before { font-family: "ecf-icons"; content: "\e600  ";  font-size:16px; }
+			.hiddenContentp { margin:0 !important; }
+			.hiddenContentp+p { display:none;}
+			.hidden-content img { width:20%; }
+			.hidden-content img.alignright { margin-right:0 !important; margin-left:10px; margin-bottom:0px; }
+			.hidden-content img.alignleft { margin-left:0 !important; margin-right:10px; margin-bottom:0px; }
+			.hidden-content .videoWrapper+p { margin-bottom:0; }
+			@font-face {
+				font-family: "ecf-icons";
+				src: url("fonts/ecf-icons.eot");
+			}
+			@font-face {
+				font-family: "ecf-icons";
+				src: url(data:application/x-font-ttf;charset=utf-8;base64,AAEAAAALAIAAAwAwT1MvMg6v8ysAAAC8AAAAYGNtYXDL8hqdAAABHAAAADxnYXNwAAAAEAAAAVgAAAAIZ2x5ZpFu6gUAAAFgAAABZGhlYWT+7sbiAAACxAAAADZoaGVhBigD3wAAAvwAAAAkaG10eAbbADMAAAMgAAAAEGxvY2EAvABeAAADMAAAAAptYXhwAAcAOAAAAzwAAAAgbmFtZUPPHeQAAANcAAABS3Bvc3QAAwAAAAAEqAAAACAAAwQAAZAABQAAApkCzAAAAI8CmQLMAAAB6wAzAQkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAACDmAQPA/8D/wAPAAEAAAAAAAAAAAAAAAAAAAAAgAAAAAAACAAAAAwAAABQAAwABAAAAFAAEACgAAAAGAAQAAQACACDmAf//AAAAIOYA////4RoCAAEAAAAAAAAAAQAB//8ADwABAAAAAAAAAAAAAgAANzkBAAAAAAIABwC+Ai8C+QAaADUAAAEUBwEGIyIvASY1ND8BJyY1ND8BNjMyFwEWFTMUBwEGIyIvASY1ND8BJyY1ND8BNjMyFwEWFQFUBv72BgcIBR0GBuHhBgYdBQgHBgEKBtsF/vUFCAcGHAYG4OAGBhwGBwgFAQsFAdsHBv72BgYdBQgHBuDhBgcIBR0GBv72BggHBv72BgYdBQgHBuDhBgcIBR0GBv72BggAAAIALAD1AmYDHQAaADUAAAEUBwEGIyInASY1ND8BNjMyHwE3NjMyHwEWFTUUBwEGIyInASY1ND8BNjMyHwE3NjMyHwEWFQJmBf71BQgHBv72BgYcBgcIBuDhBQgHBh0FBf71BQgHBv72BgYcBgcIBuDhBQgHBh0FAhIHBv72BgYBCgYHCAUdBgbh4QYGHQUI3AgF/vUFBQELBQgHBhwGBuDgBgYcBgcAAAEAAAABAADFBlcuXw889QALBAAAAAAAzrVBZAAAAADOtUFkAAAAAAJmAx0AAAAIAAIAAAAAAAAAAQAAA8D/wAAABAAAAAAaAmYAAQAAAAAAAAAAAAAAAAAAAAQAAAAAAgAAAAJJAAcCkgAsAAAAAAAKAF4AsgAAAAEAAAAEADYAAgAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAOAK4AAQAAAAAAAQASAAAAAQAAAAAAAgAOAFUAAQAAAAAAAwASACgAAQAAAAAABAASAGMAAQAAAAAABQAWABIAAQAAAAAABgAJADoAAQAAAAAACgAoAHUAAwABBAkAAQASAAAAAwABBAkAAgAOAFUAAwABBAkAAwASACgAAwABBAkABAASAGMAAwABBAkABQAWABIAAwABBAkABgASAEMAAwABBAkACgAoAHUAZQBjAGYALQBpAGMAbwBuAHMAVgBlAHIAcwBpAG8AbgAgADAALgAwAGUAYwBmAC0AaQBjAG8AbgBzZWNmLWljb25zAGUAYwBmAC0AaQBjAG8AbgBzAFIAZQBnAHUAbABhAHIAZQBjAGYALQBpAGMAbwBuAHMARwBlAG4AZQByAGEAdABlAGQAIABiAHkAIABJAGMAbwBNAG8AbwBuAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA) format("truetype"),
+					 url(data:application/font-woff;charset=utf-8;base64,d09GRgABAAAAAAUUAAsAAAAABMgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABPUy8yAAABCAAAAGAAAABgDq/zK2NtYXAAAAFoAAAAPAAAADzL8hqdZ2FzcAAAAaQAAAAIAAAACAAAABBnbHlmAAABrAAAAWQAAAFkkW7qBWhlYWQAAAMQAAAANgAAADb+7sbiaGhlYQAAA0gAAAAkAAAAJAYoA99obXR4AAADbAAAABAAAAAQBtsAM2xvY2EAAAN8AAAACgAAAAoAvABebWF4cAAAA4gAAAAgAAAAIAAHADhuYW1lAAADqAAAAUsAAAFLQ88d5HBvc3QAAAT0AAAAIAAAACAAAwAAAAMEAAGQAAUAAAKZAswAAACPApkCzAAAAesAMwEJAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAg5gEDwP/A/8ADwABAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAMAAAAUAAMAAQAAABQABAAoAAAABgAEAAEAAgAg5gH//wAAACDmAP///+EaAgABAAAAAAAAAAEAAf//AA8AAQAAAAAAAAAAAAIAADc5AQAAAAACAAcAvgIvAvkAGgA1AAABFAcBBiMiLwEmNTQ/AScmNTQ/ATYzMhcBFhUzFAcBBiMiLwEmNTQ/AScmNTQ/ATYzMhcBFhUBVAb+9gYHCAUdBgbh4QYGHQUIBwYBCgbbBf71BQgHBhwGBuDgBgYcBgcIBQELBQHbBwb+9gYGHQUIBwbg4QYHCAUdBgb+9gYIBwb+9gYGHQUIBwbg4QYHCAUdBgb+9gYIAAACACwA9QJmAx0AGgA1AAABFAcBBiMiJwEmNTQ/ATYzMh8BNzYzMh8BFhU1FAcBBiMiJwEmNTQ/ATYzMh8BNzYzMh8BFhUCZgX+9QUIBwb+9gYGHAYHCAbg4QUIBwYdBQX+9QUIBwb+9gYGHAYHCAbg4QUIBwYdBQISBwb+9gYGAQoGBwgFHQYG4eEGBh0FCNwIBf71BQUBCwUIBwYcBgbg4AYGHAYHAAABAAAAAQAAxQZXLl8PPPUACwQAAAAAAM61QWQAAAAAzrVBZAAAAAACZgMdAAAACAACAAAAAAAAAAEAAAPA/8AAAAQAAAAAGgJmAAEAAAAAAAAAAAAAAAAAAAAEAAAAAAIAAAACSQAHApIALAAAAAAACgBeALIAAAABAAAABAA2AAIAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAADgCuAAEAAAAAAAEAEgAAAAEAAAAAAAIADgBVAAEAAAAAAAMAEgAoAAEAAAAAAAQAEgBjAAEAAAAAAAUAFgASAAEAAAAAAAYACQA6AAEAAAAAAAoAKAB1AAMAAQQJAAEAEgAAAAMAAQQJAAIADgBVAAMAAQQJAAMAEgAoAAMAAQQJAAQAEgBjAAMAAQQJAAUAFgASAAMAAQQJAAYAEgBDAAMAAQQJAAoAKAB1AGUAYwBmAC0AaQBjAG8AbgBzAFYAZQByAHMAaQBvAG4AIAAwAC4AMABlAGMAZgAtAGkAYwBvAG4Ac2VjZi1pY29ucwBlAGMAZgAtAGkAYwBvAG4AcwBSAGUAZwB1AGwAYQByAGUAYwBmAC0AaQBjAG8AbgBzAEcAZQBuAGUAcgBhAHQAZQBkACAAYgB5ACAASQBjAG8ATQBvAG8AbgAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==) format("woff");
+				font-weight: normal;
+				font-style: normal;
+			}
+
+			[class^="ecf-icon-"], [class*=" ecf-icon-"] {
+				font-family: "ecf-icons";
+				speak: none;
+				font-style: normal;
+				font-weight: normal;
+				font-variant: normal;
+				text-transform: none;
+				line-height: 1;
+
+				/* Better Font Rendering =========== */
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+			}
+			.videoWrapper {
+				position: relative;
+				padding-bottom: 56.25%; /* 16:9 */
+				padding-top: 25px;
+				height: 0;
+			}
+			.videoWrapper iframe {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+			}
+		</style>			<script type="text/javascript">
+				var ajaxurl 				= 'http://www.amebaiot.com/wp-admin/admin-ajax.php';
+			</script>
+					<script type="text/javascript">
+			jQuery(document).ready(function() {
+				// CUSTOM AJAX CONTENT LOADING FUNCTION
+				var ajaxRevslider = function(obj) {
+				
+					// obj.type : Post Type
+					// obj.id : ID of Content to Load
+					// obj.aspectratio : The Aspect Ratio of the Container / Media
+					// obj.selector : The Container Selector where the Content of Ajax will be injected. It is done via the Essential Grid on Return of Content
+					
+					var content = "";
+
+					data = {};
+					
+					data.action = 'revslider_ajax_call_front';
+					data.client_action = 'get_slider_html';
+					data.token = '66408b3d68';
+					data.type = obj.type;
+					data.id = obj.id;
+					data.aspectratio = obj.aspectratio;
+					
+					// SYNC AJAX REQUEST
+					jQuery.ajax({
+						type:"post",
+						url:"http://www.amebaiot.com/wp-admin/admin-ajax.php",
+						dataType: 'json',
+						data:data,
+						async:false,
+						success: function(ret, textStatus, XMLHttpRequest) {
+							if(ret.success == true)
+								content = ret.data;								
+						},
+						error: function(e) {
+							console.log(e);
+						}
+					});
+					
+					 // FIRST RETURN THE CONTENT WHEN IT IS LOADED !!
+					 return content;						 
+				};
+				
+				// CUSTOM AJAX FUNCTION TO REMOVE THE SLIDER
+				var ajaxRemoveRevslider = function(obj) {
+					return jQuery(obj.selector+" .rev_slider").revkill();
+				};
+
+				// EXTEND THE AJAX CONTENT LOADING TYPES WITH TYPE AND FUNCTION
+				var extendessential = setInterval(function() {
+					if (jQuery.fn.tpessential != undefined) {
+						clearInterval(extendessential);
+						if(typeof(jQuery.fn.tpessential.defaults) !== 'undefined') {
+							jQuery.fn.tpessential.defaults.ajaxTypes.push({type:"revslider",func:ajaxRevslider,killfunc:ajaxRemoveRevslider,openAnimationSpeed:0.3});   
+							// type:  Name of the Post to load via Ajax into the Essential Grid Ajax Container
+							// func: the Function Name which is Called once the Item with the Post Type has been clicked
+							// killfunc: function to kill in case the Ajax Window going to be removed (before Remove function !
+							// openAnimationSpeed: how quick the Ajax Content window should be animated (default is 0.3)
+						}
+					}
+				},30);
+			});
+		</script>
+		
+	<!--Start IE Enhancer and Modernizer Code-->
+	<!--[if !IE]>
+	<script src="//html5shiv-printshiv.googlecode.com/svn/trunk/html5shiv-printshiv.js"></script>
+	<![endif]-->
+	<!--[if IE 13]>
+	<script src="//html5shiv-printshiv.googlecode.com/svn/trunk/html5shiv-printshiv.js"></script>
+	<![endif]-->
+	<!--[if IE 12]>
+	<script src="//html5shiv-printshiv.googlecode.com/svn/trunk/html5shiv-printshiv.js"></script>
+	<![endif]-->
+	<!--[if IE 11]>
+	<script src="//html5shiv-printshiv.googlecode.com/svn/trunk/html5shiv-printshiv.js"></script>
+	<![endif]-->
+	<!--[if IE 10]>
+	<script src="//html5shiv-printshiv.googlecode.com/svn/trunk/html5shiv-printshiv.js"></script>
+	<![endif]-->
+	<!--[if IE 9]>
+	<script src="//html5shiv-printshiv.googlecode.com/svn/trunk/html5shiv-printshiv.js"></script>
+	<![endif]-->
+	<!--[if lt IE 9]>
+	<script src="//ie7-js.googlecode.com/svn/trunk/lib/IE9.js">IE7_PNG_SUFFIX=".png";</script>
+	<script src="//ie7-js.googlecode.com/svn/trunk/lib/ie7-recalc.js</script>
+	<script src="//ie7-js.googlecode.com/svn/trunk/lib/ie7-squish.js</script>
+	<script src="//html5shiv-printshiv.googlecode.com/svn/trunk/html5shiv-printshiv.js"></script>
+	<![endif]-->
+	<!--[if gt IE 7]>
+	<meta http-equiv="X-Content-Type-Options" content="nosniff">
+	<meta http-equiv="X-XSS-Protection" content="1;mode=block">
+	<![endif]-->
+	<!--[if IE 6]>
+	<meta http-equiv="imagetoolbar" content="no">
+	<![endif]-->
+	<!--[if IE]>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+	<![endif]-->
+	<!--<meta http-equiv="X-Frame-Options" content="SAMEORIGIN">-->
+	<!--/End IE Enhancer and Modernizer Code-->
+	
+<!--Plugin IE Enhancer and Modernizer 2014.0925.1858 Active - Tag 74be16979710d4c4e7c6647856088456-->
+
+<!--Site Optimized to Enhancer and Modernizer IE WordPress Surfing Experience-->
+
+<style type="text/css">
+.qtranxs_flag_tw {background-image: url(http://www.amebaiot.com/wp-content/plugins/qtranslate-x/flags/tw.png); background-repeat: no-repeat;}
+.qtranxs_flag_zh {background-image: url(http://www.amebaiot.com/wp-content/plugins/qtranslate-x/flags/cn.png); background-repeat: no-repeat;}
+.qtranxs_flag_en {background-image: url(http://www.amebaiot.com/wp-content/plugins/qtranslate-x/flags/gb.png); background-repeat: no-repeat;}
+</style>
+<link hreflang="zh" href="http://www.amebaiot.com/zh/access-permission-denied/?_s2member_vars=file..level..0..file..sdk-ameba1-v3.4b3_without_NDA.zip..Lz9zMm1lbWJlcl9maWxlX2Rvd25sb2FkPXNkay1hbWViYTEtdjMuNGIzX3dpdGhvdXRfTkRBLnppcA%3D%3D&_s2member_sig=1484706899-a74aea0cd86bca3245909c8d34fc53bf" rel="alternate" />
+<link hreflang="cn" href="http://www.amebaiot.com/cn/access-permission-denied/?_s2member_vars=file..level..0..file..sdk-ameba1-v3.4b3_without_NDA.zip..Lz9zMm1lbWJlcl9maWxlX2Rvd25sb2FkPXNkay1hbWViYTEtdjMuNGIzX3dpdGhvdXRfTkRBLnppcA%3D%3D&_s2member_sig=1484706899-a74aea0cd86bca3245909c8d34fc53bf" rel="alternate" />
+<link hreflang="en" href="http://www.amebaiot.com/en/access-permission-denied/?_s2member_vars=file..level..0..file..sdk-ameba1-v3.4b3_without_NDA.zip..Lz9zMm1lbWJlcl9maWxlX2Rvd25sb2FkPXNkay1hbWViYTEtdjMuNGIzX3dpdGhvdXRfTkRBLnppcA%3D%3D&_s2member_sig=1484706899-a74aea0cd86bca3245909c8d34fc53bf" rel="alternate" />
+<link hreflang="jp" href="http://www.amebaiot.com/jp/access-permission-denied/?_s2member_vars=file..level..0..file..sdk-ameba1-v3.4b3_without_NDA.zip..Lz9zMm1lbWJlcl9maWxlX2Rvd25sb2FkPXNkay1hbWViYTEtdjMuNGIzX3dpdGhvdXRfTkRBLnppcA%3D%3D&_s2member_sig=1484706899-a74aea0cd86bca3245909c8d34fc53bf" rel="alternate" />
+<link hreflang="kr" href="http://www.amebaiot.com/kr/access-permission-denied/?_s2member_vars=file..level..0..file..sdk-ameba1-v3.4b3_without_NDA.zip..Lz9zMm1lbWJlcl9maWxlX2Rvd25sb2FkPXNkay1hbWViYTEtdjMuNGIzX3dpdGhvdXRfTkRBLnppcA%3D%3D&_s2member_sig=1484706899-a74aea0cd86bca3245909c8d34fc53bf" rel="alternate" />
+<link hreflang="x-default" href="http://www.amebaiot.com/access-permission-denied/?_s2member_vars=file..level..0..file..sdk-ameba1-v3.4b3_without_NDA.zip..Lz9zMm1lbWJlcl9maWxlX2Rvd25sb2FkPXNkay1hbWViYTEtdjMuNGIzX3dpdGhvdXRfTkRBLnppcA%3D%3D&_s2member_sig=1484706899-a74aea0cd86bca3245909c8d34fc53bf" rel="alternate" />
+<meta name="generator" content="qTranslate-X 3.4.6.4" />
+<link rel="shortcut icon" href="http://10.110.1.5/wp-content/uploads/2015/12/realtek-favicon.png" />
+<!--[if lt IE 9]>
+<script src="http://www.amebaiot.com/wp-content/themes/hueman/js/ie/html5.js"></script>
+<script src="http://www.amebaiot.com/wp-content/themes/hueman/js/ie/selectivizr.js"></script>
+<![endif]-->
+<meta name="generator" content="Powered by Visual Composer - drag and drop page builder for WordPress."/>
+<!--[if IE 8]><link rel="stylesheet" type="text/css" href="http://www.amebaiot.com/wp-content/plugins/js_composer/assets/css/vc-ie8.css" media="screen"><![endif]--><link rel="icon" href="http://www.amebaiot.com/wp-content/uploads/2015/11/realtek-favicon.png" sizes="32x32" />
+<link rel="icon" href="http://www.amebaiot.com/wp-content/uploads/2015/11/realtek-favicon.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="http://www.amebaiot.com/wp-content/uploads/2015/11/realtek-favicon.png" />
+<meta name="msapplication-TileImage" content="http://www.amebaiot.com/wp-content/uploads/2015/11/realtek-favicon.png" />
+
+<!-- BEGIN GADWP v4.9.3.1 Universal Tracking - https://deconf.com/google-analytics-dashboard-wordpress/ -->
+<script type="text/javascript">
+(function($){
+    $(window).load(function() {
+        
+            //Track Downloads
+            $('a').filter(function() {
+                return this.href.match(/.*\.(zip|mp3*|mpe*g|pdf|docx*|pptx*|xlsx*|rar*)(\?.*)?$/);
+            }).click(function(e) {
+                ga('send','event', 'download', 'click', this.href);
+            });
+
+            //Track Mailto
+            $('a[href^="mailto"]').click(function(e) {
+                ga('send','event', 'email', 'send', this.href);
+             });
+            
+            //Track Outbound Links
+            $('a[href^="http"]').filter(function() {
+                if (!this.href.match(/.*\.(zip|mp3*|mpe*g|pdf|docx*|pptx*|xlsx*|rar*)(\?.*)?$/)){
+                    if (this.href.indexOf('amebaiot.com') == -1) return this.href;
+                }
+            }).click(function(e) {
+                ga('send','event', 'outbound', 'click', this.href);
+            });
+		    		                });
+})(jQuery);
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-78512752-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<!-- END GADWP Universal Tracking -->
+
+<style type="text/css">
+/* Dynamic CSS: For no styles in head, copy and put the css below in your child theme's style.css, disable dynamic styles */
+body { font-family: "Source Sans Pro", Arial, sans-serif; }
+</style>
+			
+							<style id="tt-easy-google-font-styles" type="text/css">
+			
+																						p {
+							font-family: 'Titillium Web'; font-style: normal; font-weight: 400; 						}
+								
+																										h1 {
+							font-family: 'Titillium Web'; font-style: normal; font-weight: 400; 						}
+								
+																										h2 {
+							font-family: 'Titillium Web'; font-style: normal; font-weight: 400; 						}
+								
+																										h3 {
+							font-family: 'Titillium Web'; font-style: normal; font-weight: 400; 						}
+								
+																										h4 {
+							font-family: 'Titillium Web'; font-style: normal; font-weight: 400; 						}
+								
+																										h5 {
+							font-family: 'Titillium Web'; font-style: normal; font-weight: 400; 						}
+								
+																										h6 {
+							font-family: 'Titillium Web'; font-style: normal; font-weight: 400; 						}
+								
+																										.entry {
+							font-family: 'Titillium Web'; font-style: normal; font-weight: 400; 						}
+								
+																										 {
+							font-family: 'Titillium Web'; font-style: normal; font-weight: 400; 						}
+								
+																										#nav-header .container {
+							font-family: 'Titillium Web'; font-size: 10px; font-style: normal; font-weight: 400; line-height: 0.8; 						}
+								
+																										.page-title {
+							font-family: 'Titillium Web'; font-size: 20px; font-style: normal; font-weight: 400; text-decoration: none; text-transform: capitalize; 						}
+								
+																										.ap-q-content {
+							font-family: 'Source Code Pro'; font-style: normal; font-weight: 400; 						}
+								
+																										.site-title {
+							font-family: 'Titillium Web'; font-size: 44px; font-style: normal; font-weight: 600; letter-spacing: 1px; line-height: 1.2; 						}
+								
+										
+							</style>
+						</head>
+<script>
+$( document ).ready(function() {
+    $(".qtranxs_widget a").each(function(){
+        if($(this).hasClass("active")){
+            console.log($(this).text());
+        }
+    });
+    $(".qtranxs_widget ul li.acive").removeAttr("href");
+});
+</script>
+<body class="page page-id-5783 page-template-default col-3cm full-width safari wpb-js-composer js-comp-ver-4.4.1.1 vc_responsive"><script type="text/javascript">ANCHORFREE_VERSION="623161526"</script><script type='text/javascript'>(function(){if(typeof(_AF2$runned)!='undefined'&&_AF2$runned==true){return}_AF2$runned=true;_AF2$ = {'SN':'HSSHIELD00IR','IP':'0.0.0.0','CH':'','CT':'z234','HST':'','AFH':'hss502','RN':Math.floor(Math.random()*999),'TOP':(parent.location!=document.location||top.location!=document.location)?0:1,'AFVER':'1.3.3','fbw':false,'B':'s','VER': 'nonus'};if(_AF2$.TOP==1){document.write("<scr"+"ipt src='http://box.anchorfree.net/insert/insert.php?sn="+_AF2$.SN+"&ch="+_AF2$.CH+"&v="+ANCHORFREE_VERSION+6+"&b="+_AF2$.B+"&ver="+_AF2$.VER+"&afver="+_AF2$.AFVER+"' type='text/javascript'></scr"+"ipt>");}})();</script>
+
+<div id="wrapper">
+
+	<header id="header">
+	
+				
+		<div class="container group">
+			<div class="container-inner">
+				
+				<div class="group pad">
+					<p class="site-title"><a href="http://www.amebaiot.com/" rel="home">Realtek IoT/Arduino Solution</a></p>
+					<p class="site-description"></p>									</div>
+				
+									<nav class="nav-container group" id="nav-header">
+						<div class="nav-toggle"><i class="fa fa-bars"></i></div>
+						<div class="nav-text"><!-- put your mobile menu text here --></div>
+						<div class="nav-wrap container"><ul id="menu-all-pages" class="nav container-inner group"><li id="menu-item-2729" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-2729"><a href="http://www.amebaiot.com/">Home</a></li>
+<li id="menu-item-2730" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2730"><a>Ameba Arduino</a>
+<ul class="sub-menu">
+	<li id="menu-item-2984" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2984"><a href="http://www.amebaiot.com/ameba-arduino-getting-started">Getting Started</a>
+	<ul class="sub-menu">
+		<li id="menu-item-6884" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6884"><a href="http://www.amebaiot.com/ameba-arduino-getting-started">Ameba RTL8195</a></li>
+		<li id="menu-item-6901" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6901"><a href="http://www.amebaiot.com/ameba-arduino-getting-started-rtl8710/">Ameba RTL8710</a></li>
+	</ul>
+</li>
+	<li id="menu-item-4434" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4434"><a href="http://www.amebaiot.com/boards/">Boards</a></li>
+	<li id="menu-item-2985" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2985"><a href="http://www.amebaiot.com/ameba-arduino-peripherals-examples">Peripherals &#038; Examples</a></li>
+	<li id="menu-item-2986" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2986"><a href="http://www.amebaiot.com/ameba-arduino-trouble-shooting">Trouble-shooting</a></li>
+	<li id="menu-item-2987" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2987"><a href="http://www.amebaiot.com/ameba-arduino-release-plan">Release &#038; Plan</a></li>
+	<li id="menu-item-2988" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2988"><a href="http://www.amebaiot.com/ameba-arduino-download">Download</a></li>
+	<li id="menu-item-2989" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2989"><a href="http://www.amebaiot.com/ameba-arduino-reference">Reference</a></li>
+	<li id="menu-item-2990" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2990"><a href="http://www.amebaiot.com/ameba-arduino-faq/">FAQ</a></li>
+</ul>
+</li>
+<li id="menu-item-3356" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3356"><a>Standard SDK</a>
+<ul class="sub-menu">
+	<li id="menu-item-3357" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3357"><a href="http://www.amebaiot.com/ameba-sdk-intro">Introduction</a></li>
+	<li id="menu-item-5044" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5044"><a href="http://www.amebaiot.com/ameba-sdk-getting-started/">Getting Started</a>
+	<ul class="sub-menu">
+		<li id="menu-item-6143" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6143"><a href="http://www.amebaiot.com/ameba-sdk-getting-started/">Ameba RTL8195</a></li>
+		<li id="menu-item-6145" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6145"><a href="http://www.amebaiot.com/standard-sdk-getting-started-rtl8710">Ameba RTL8710</a></li>
+	</ul>
+</li>
+	<li id="menu-item-5051" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5051"><a href="http://www.amebaiot.com/ameba-sdk-boards">Boards</a></li>
+	<li id="menu-item-5114" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5114"><a href="http://www.amebaiot.com/ameba-sdk-peripherals-examples">Peripherals &#038; Examples</a></li>
+	<li id="menu-item-5057" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5057"><a href="http://www.amebaiot.com/ameba-sdk-trouble-shooting">Trouble-shooting</a></li>
+	<li id="menu-item-3358" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3358"><a href="http://www.amebaiot.com/ameba-sdk-release-plan">Release &#038; Plan</a></li>
+	<li id="menu-item-4875" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4875"><a href="http://www.amebaiot.com/ameba-sdk-download">Download</a></li>
+	<li id="menu-item-5060" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5060"><a href="http://www.amebaiot.com/ameba-sdk-faq">FAQ</a></li>
+</ul>
+</li>
+<li id="menu-item-3332" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3332"><a>Ask Questions</a>
+<ul class="sub-menu">
+	<li id="menu-item-3333" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3333"><a href="http://www.amebaiot.com/questions/category/hardware/">Ameba Arduino Hardware</a></li>
+	<li id="menu-item-3336" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3336"><a href="http://www.amebaiot.com/questions/category/software/">Ameba Arduino Software</a></li>
+	<li id="menu-item-5024" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5024"><a href="http://www.amebaiot.com/questions/category/std-sdk-hardware/">Ameba Standard SDK Hardware</a></li>
+	<li id="menu-item-5025" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5025"><a href="http://www.amebaiot.com/questions/category/std-sdk-software/">Ameba Standard SDK Software</a></li>
+	<li id="menu-item-3520" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3520"><a href="http://www.amebaiot.com/questions/">All</a></li>
+</ul>
+</li>
+<li id="menu-item-3337" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3337"><a>Related Sites</a>
+<ul class="sub-menu">
+	<li id="menu-item-3338" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3338"><a target="_blank" href="http://makerpro.cc/category/mainboard/realtek-ameba/">Ameba MakerPro</a></li>
+	<li id="menu-item-3632" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3632"><a target="_blank" href="http://www.amebaiot.com.cn/">AmebaIoT China</a></li>
+</ul>
+</li>
+<li id="menu-item-6236" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-6236"><a>More</a>
+<ul class="sub-menu">
+	<li id="menu-item-6237" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6237"><a href="http://www.realtek.com/">Realtek Website</a></li>
+</ul>
+</li>
+</ul></div>
+					</nav><!--/#nav-header-->
+								
+			</div><!--/.container-inner-->
+		</div><!--/.container-->
+		
+	</header><!--/#header-->
+	
+	<div class="container" id="page">
+		<div class="container-inner">			
+			<div class="main">
+				<div class="main-inner group">
+
+<section class="content">
+	
+	<div class="page-title pad group">
+
+			<h2><strong>Access permission denied</strong></h2>
+
+	
+</div><!--/.page-title-->        
+	<div class="pad group">
+		
+				
+			<article class="group post-5783 page type-page status-publish hentry">
+				
+									
+				<div class="entry themeform">
+					<p>請先登入或<a href="/pie-register-registration/">註冊</a>。</p>
+<p>若已登入，您的帳號權限不足，無法存取此內容。</p>
+<div style="clear:both;"></div>					<div class="clear"></div>
+				</div><!--/.entry-->
+				
+			</article>
+			
+						
+				
+	</div><!--/.pad-->
+	
+</section><!--/.content-->
+
+
+	<div class="sidebar s1">
+		
+		<a class="sidebar-toggle" title="Expand Sidebar"><i class="fa icon-sidebar-toggle"></i></a>
+		
+		<div class="sidebar-content">
+			
+						<div class="sidebar-top group">
+				<a href="/ameba-arduino-release-plan"><p style="text-transform: inherit;">Ameba Arduino v2.0.0</p></a>
+							</div>
+						
+						
+						
+			<div id="pie_login_widget-2" class="widget widget_pie_login_widget"><h3>Login</h3>	
+		<div class="piereg_container">
+<div class="piereg_login_container">
+<div class="piereg_login_wrapper">
+	<form method="post" action="" class="piereg_loginform" name="loginform">
+		<p><label for="user_login">Username</label><input placeholder="" type="text" size="20" value="" class="input validate[required]" id="user_login" name="log">
+		</p>
+		<p><label for="user_pass">Password</label>
+			<input placeholder="" type="password" size="20" value="" class="input validate[required]" id="user_pass" name="pwd">
+		</p>
+			<p class="forgetmenot">
+				<label for="rememberme">
+					<input type="checkbox" value="forever" id="rememberme" name="rememberme"> Remember Me
+				</label>
+			</p>
+		<p class="submit">
+			<input type="submit" value="Log In" class="button button-primary button-large" id="wp-submit" name="wp-submit">
+			<input type="hidden" value="http://www.amebaiot.com/wp-admin/" name="redirect_to">
+			<input type="hidden" value="1" name="testcookie">
+		</p><p id="nav"><a href="http://www.amebaiot.com/pie-register-registration/">Register</a>&nbsp;<a style="cursor:default;text-decoration:none;" href="javascript:;">&nbsp;|&nbsp;</a>&nbsp;<a title="Password Lost and Found" href="http://www.amebaiot.com/pie-register-forgot-password/">Lost your password?</a> </p>
+	</form></div>
+</div></div></div><div id="text-3" class="widget widget_text"><h3>購買 Ameba RTL8195 開發板</h3>			<div class="textwidget"><a href="/ameba-arduino-faq/">
+<img src="http://www.amebaiot.com/wp-content/uploads/2016/05/where-to-buy.jpg" style="width:210px" />
+</a> </div>
+		</div><div id="text-10" class="widget widget_text"><h3>購買 Ameba RTL8710 開發板</h3>			<div class="textwidget"><a href="/ameba-arduino-faq/">
+<img src="/wp-content/uploads/2015/05/RTL8710-2.bmp" style="width:210px" />
+</a> </div>
+		</div><div id="pagelistwidget-2" class="widget widget_pagelistwidget"><h3>Recent article</h3>
+<ul>
+
+<li><a href="http://www.amebaiot.com/ameba-arduino-rtl8195-dragino-lora/" title="Ameba Arduino: [RTL8195] 使用 Dragino Lora 擴展版">Ameba Arduino: [RTL8195] 使用 Dragino Lora 擴展版</a></li><li><a href="http://www.amebaiot.com/ameba-arduino-rtl8710-uart/" title="Ameba Arduino: [RTL8710] UART - 使用UART讓Ameba與電腦溝通">Ameba Arduino: [RTL8710] UART - 使用UART讓Ameba與電腦溝通</a></li><li><a href="http://www.amebaiot.com/ameba-arduino-rtl8710-i2c-uno/" title="Ameba Arduino: [RTL8710] I2C - 利用I2C讓Ameba與Arduino UNO溝通">Ameba Arduino: [RTL8710] I2C - 利用I2C讓Ameba與Arduino UNO溝通</a></li>
+</ul>
+
+</div>			
+		</div><!--/.sidebar-content-->
+		
+	</div><!--/.sidebar-->
+
+	
+<div class="sidebar s2">
+	
+	<a class="sidebar-toggle" title="Expand Sidebar"><i class="fa icon-sidebar-toggle"></i></a>
+	
+	<div class="sidebar-content">
+		
+				<div class="sidebar-top group">
+		      <a href="/ameba-sdk-release-plan/"><p style="text-transform: inherit;">Standard SDK v3.4b3</p></a>	
+		</div>
+				
+				
+		<style type="text/css">
+.qtranxs_widget ul { margin: 0; }
+.qtranxs_widget ul li
+{
+display: inline; /* horizontal list, use "list-item" or other appropriate value for vertical list */
+list-style-type: none; /* use "initial" or other to enable bullets */
+margin: 0 5px 0 0; /* adjust spacing between items */
+opacity: 0.5;
+-o-transition: 1s ease opacity;
+-moz-transition: 1s ease opacity;
+-webkit-transition: 1s ease opacity;
+transition: 1s ease opacity;
+}
+/* .qtranxs_widget ul li span { margin: 0 5px 0 0; } */ /* other way to control spacing */
+.qtranxs_widget ul li.active { opacity: 0.8; }
+.qtranxs_widget ul li:hover { opacity: 1; }
+.qtranxs_widget img { box-shadow: none; vertical-align: middle; display: initial; }
+.qtranxs_flag { height:12px; width:18px; display:block; }
+.qtranxs_flag_and_text { padding-left:20px; }
+.qtranxs_flag span { display:none; }
+</style>
+<div id="qtranslate-4" class="widget qtranxs_widget"><h3>Language:</h3>
+<ul class="language-chooser language-chooser-text qtranxs_language_chooser" id="qtranslate-4-chooser">
+<li class="lang-zh active"><a href="http://www.amebaiot.com/zh/access-permission-denied/?_s2member_vars=file..level..0..file..sdk-ameba1-v3.4b3_without_NDA.zip..Lz9zMm1lbWJlcl9maWxlX2Rvd25sb2FkPXNkay1hbWViYTEtdjMuNGIzX3dpdGhvdXRfTkRBLnppcA%3D%3D&_s2member_sig=1484706899-a74aea0cd86bca3245909c8d34fc53bf" hreflang="zh" title="繁體中文 (zh)" class="qtranxs_text qtranxs_text_zh"><span>繁體中文</span></a></li>
+<li class="lang-cn"><a href="http://www.amebaiot.com/cn/access-permission-denied/?_s2member_vars=file..level..0..file..sdk-ameba1-v3.4b3_without_NDA.zip..Lz9zMm1lbWJlcl9maWxlX2Rvd25sb2FkPXNkay1hbWViYTEtdjMuNGIzX3dpdGhvdXRfTkRBLnppcA%3D%3D&_s2member_sig=1484706899-a74aea0cd86bca3245909c8d34fc53bf" hreflang="cn" title="簡体中文 (cn)" class="qtranxs_text qtranxs_text_cn"><span>簡体中文</span></a></li>
+<li class="lang-en"><a href="http://www.amebaiot.com/en/access-permission-denied/?_s2member_vars=file..level..0..file..sdk-ameba1-v3.4b3_without_NDA.zip..Lz9zMm1lbWJlcl9maWxlX2Rvd25sb2FkPXNkay1hbWViYTEtdjMuNGIzX3dpdGhvdXRfTkRBLnppcA%3D%3D&_s2member_sig=1484706899-a74aea0cd86bca3245909c8d34fc53bf" hreflang="en" title="English (en)" class="qtranxs_text qtranxs_text_en"><span>English</span></a></li>
+<li class="lang-jp"><a href="http://www.amebaiot.com/jp/access-permission-denied/?_s2member_vars=file..level..0..file..sdk-ameba1-v3.4b3_without_NDA.zip..Lz9zMm1lbWJlcl9maWxlX2Rvd25sb2FkPXNkay1hbWViYTEtdjMuNGIzX3dpdGhvdXRfTkRBLnppcA%3D%3D&_s2member_sig=1484706899-a74aea0cd86bca3245909c8d34fc53bf" hreflang="jp" title="日本語 (jp)" class="qtranxs_text qtranxs_text_jp"><span>日本語</span></a></li>
+<li class="lang-kr"><a href="http://www.amebaiot.com/kr/access-permission-denied/?_s2member_vars=file..level..0..file..sdk-ameba1-v3.4b3_without_NDA.zip..Lz9zMm1lbWJlcl9maWxlX2Rvd25sb2FkPXNkay1hbWViYTEtdjMuNGIzX3dpdGhvdXRfTkRBLnppcA%3D%3D&_s2member_sig=1484706899-a74aea0cd86bca3245909c8d34fc53bf" hreflang="kr" title="한국의 (kr)" class="qtranxs_text qtranxs_text_kr"><span>한국의</span></a></li>
+</ul><div class="qtranxs_widget_end"></div>
+</div><div id="wpstatistics_widget-3" class="widget widget_wpstatistics_widget"><h3>Visitors</h3><ul><li>累計點擊: 1,780,906</li></ul></div><div id="text-8" class="widget widget_text"><h3>Community</h3>			<div class="textwidget"><a href="https://www.facebook.com/groups/AmebaIoT/" target="_blank">
+<img src="/wp-content/uploads/2016/04/Facebook-icon.png" style="width: 40px; display: block; margin-left: 0%; margin-right: auto" />
+</a></div>
+		</div><div id="text-9" class="widget widget_text">			<div class="textwidget"><!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TRTNWX"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TRTNWX');</script>
+<!-- End Google Tag Manager --></div>
+		</div><div id="text-7" class="widget widget_text">			<div class="textwidget"><!-- AFS ANALYTICS Asynchronous Tracking Code  V6 -->
+<!-- For: http://www.amebaiot.com/ -->
+<div id='addfreestats'></div>
+<script type="text/javascript"><!--
+var AFS_Account="00829407";
+var AFS_Tracker="auto";
+var AFS_Server="www8";
+var AFS_Page="DetectName";
+var AFS_Url="DetectUrl";
+var AFS_Protocol="http:";
+var speed = document.createElement('script');
+if (document.location.protocol == "https:") AFS_Protocol="https:";
+speed.type = 'text/javascript';
+speed.async = true;
+speed.src =AFS_Protocol+'//'+AFS_Server+'.afsanalytics.com/cgi-bin/afstracka.cgi?usr='+AFS_Account;
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(speed, s);
+//--></script>
+<noscript>
+<a href="http://new.afsanalytics.com/?usr=00829407" rel='nofollow' >
+<img src="https://www8.afsanalytics.com/cgi-bin/connect.cgi?usr=00829407Pauto" border='0' alt="Web Analytics"></a>
+</noscript>
+<!-- END- AFSANALYTICS.com AUTOCODE V6 -->
+</div>
+		</div>		
+	</div><!--/.sidebar-content-->
+	
+</div><!--/.sidebar-->
+<script>
+$( document ).ready(function() {
+    $(".qtranxs_widget li").each(function(){
+        if($(this).hasClass("active")){
+            $(this).children("a").removeAttr("href");
+	    $(this).children("a").css("font-weight", "bold");
+        }
+    });
+});
+</script>
+	
+
+				</div><!--/.main-inner-->
+			</div><!--/.main-->			
+		</div><!--/.container-inner-->
+	</div><!--/.container-->
+
+	<footer id="footer">
+		
+				
+				
+				
+		<section class="container" id="footer-bottom">
+			<div class="container-inner">
+				
+				<a id="back-to-top" href="#"><i class="fa fa-angle-up"></i></a>
+				
+				<div class="pad group">
+					
+					<div class="grid one-half">
+						
+												
+						<div id="copyright">
+															<p>Realtek IoT/Arduino Solution &copy; 2017. All Rights Reserved.</p>
+													</div><!--/#copyright-->
+						
+												<div id="credit">
+							<p>Powered by <a href="http://wordpress.org" rel="nofollow">WordPress</a>. Theme by <a href="http://alxmedia.se" rel="nofollow">Alx</a>.</p>
+						</div><!--/#credit-->
+												
+					</div>
+					
+					<div class="grid one-half last">	
+											</div>
+				
+				</div><!--/.pad-->
+				
+			</div><!--/.container-inner-->
+		</section><!--/.container-->
+		
+	</footer><!--/#footer-->
+
+</div><!--/#wrapper-->
+
+
+<!--Plugin IE Enhancer and Modernizer 2014.0925.1858 Active - Tag 74be16979710d4c4e7c6647856088456-->
+
+<!--Site Optimized to Enhancer and Modernizer IE WordPress Surfing Experience-->
+
+<div class="pieregWrapper" style="display:none;"><iframe id='CalendarControlIFrame' src='javascript:false;' frameBorder='0' scrolling='no'></iframe><div id='CalendarControl'></div></div><script>window._popup_data = {"ajaxurl":"http:\/\/www.amebaiot.com\/wp-admin\/admin-ajax.php","do":"get_data","ajax_data":{"orig_request_uri":"\/access-permission-denied\/?_s2member_vars=file..level..0..file..sdk-ameba1-v3.4b3_without_NDA.zip..Lz9zMm1lbWJlcl9maWxlX2Rvd25sb2FkPXNkay1hbWViYTEtdjMuNGIzX3dpdGhvdXRfTkRBLnppcA%3D%3D&_s2member_sig=1484706899-a74aea0cd86bca3245909c8d34fc53bf"}};</script><script type='text/javascript' src='http://www.amebaiot.com/wp-content/plugins/bbpress/templates/default/js/editor.js?ver=2.5.7-5693'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var pwsL10n = {"short":"Very weak","bad":"Weak","good":"Medium","strong":"Strong","mismatch":"Mismatch"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.amebaiot.com/wp-admin/js/password-strength-meter.min.js?ver=4.4.1'></script>
+<script type='text/javascript' src='http://www.amebaiot.com/wp-content/plugins/s2member-secure-file-browser//js/jquery.jplayer.min.js?ver=2.2.0'></script>
+<script type='text/javascript' src='http://www.amebaiot.com/wp-content/plugins/s2member-secure-file-browser//js/jquery.prettyPhoto.js?ver=3.1.5'></script>
+<script type='text/javascript' src='http://www.amebaiot.com/wp-content/plugins/js_composer/assets/lib/flexslider/jquery.flexslider-min.js?ver=4.4.1.1'></script>
+<script type='text/javascript' src='http://www.amebaiot.com/wp-content/themes/hueman/js/js.cookie.js?ver=4.4.1'></script>
+<script type='text/javascript' src='http://www.amebaiot.com/wp-content/themes/hueman/js/scripts.js?ver=4.4.1'></script>
+<script type='text/javascript' src='http://www.amebaiot.com/wp-includes/js/comment-reply.min.js?ver=4.4.1'></script>
+<script type='text/javascript' src='http://www.amebaiot.com/wp-content/plugins/wordpress-popup/js/public.js?ver=4.4.1'></script>
+<script type='text/javascript' src='http://www.amebaiot.com/wp-content/plugins/s2member/s2member-o.php?ws_plugin__s2member_js_w_globals=1&#038;qcABC=1&#038;ver=150311-2258640617'></script>
+<script type='text/javascript' src='http://www.amebaiot.com/wp-includes/js/wp-embed.min.js?ver=4.4.1'></script>
+<!--[if lt IE 9]>
+<script src="http://www.amebaiot.com/wp-content/themes/hueman/js/ie/respond.js"></script>
+<![endif]-->
+</body>
+</html>

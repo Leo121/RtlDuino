@@ -1,0 +1,122 @@
+Added Component: Designator=C1(CAP_SMD[ 0805])
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "brief description"; Value = "ceramic capacitor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "datasheet"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Device Type"; Value = "CAPACITOR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "dimension"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "manufacturer"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "manufacturer (alternative)"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "notes"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "[0805]"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Type"; Value = "smd"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "part number"; Value = "Capacitor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "pin forming"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=C2(CAP_SMD[ 0603])
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "brief description"; Value = "ceramic capacitor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "datasheet"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Device Type"; Value = "CAPACITOR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "dimension"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "manufacturer"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "manufacturer (alternative)"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "notes"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "[0603]"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Type"; Value = "smd"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "part number"; Value = "Capacitor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "pin forming"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=C3(CAP_SMD[ 0603])
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "brief description"; Value = "ceramic capacitor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "datasheet"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Device Type"; Value = "CAPACITOR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "dimension"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "manufacturer"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "manufacturer (alternative)"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "notes"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "[0603]"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Type"; Value = "smd"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "part number"; Value = "Capacitor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "pin forming"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=C4(CAP_SMD[ 0805])
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "brief description"; Value = "ceramic capacitor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "datasheet"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Device Type"; Value = "CAPACITOR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "dimension"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "manufacturer"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "manufacturer (alternative)"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "notes"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "[0805]"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Type"; Value = "smd"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "part number"; Value = "Capacitor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "pin forming"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R1(res_smd [0603])
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "brief description"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "datasheet"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Device Type"; Value = "RESISTOR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "dimension"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "manufacturer"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "manufacturer (alternative)"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "notes"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "[0603]"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Type"; Value = "smd"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "part number"; Value = "Resistor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "pin forming"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Revision"; Value = "July-2002: Re-released for DXP Platform."; VariantName = "[No Variations]"
+Added Component: Designator=U1(RTL-001)
+Add component. Clean all parameters for all variants
+Added Component: Designator=U2(SOT-223)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "?????"; Value = "Adjustable/Fixed Low Dropout Linear Regulator"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "???????"; Value = "???? ?????????"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "????"; Value = "1.570"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "????"; Value = "SOT-223"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=ENABLE Pin=R1-1
+Added Pin To Net: NetName=ENABLE Pin=U1-3
+Added Net: Name=ENABLE
+Added Pin To Net: NetName=GND Pin=C1-1
+Added Pin To Net: NetName=GND Pin=C2-1
+Added Pin To Net: NetName=GND Pin=C3-1
+Added Pin To Net: NetName=GND Pin=C4-1
+Added Pin To Net: NetName=GND Pin=U1-15
+Added Pin To Net: NetName=GND Pin=U2-1
+Added Net: Name=GND
+Added Pin To Net: NetName=I2C1_SCL Pin=U1-2
+Added Net: Name=I2C1_SCL
+Added Pin To Net: NetName=I2C1_SDA Pin=U1-10
+Added Net: Name=I2C1_SDA
+Added Pin To Net: NetName=LOG_RX Pin=U1-21
+Added Net: Name=LOG_RX
+Added Pin To Net: NetName=LOG_TX Pin=U1-22
+Added Net: Name=LOG_TX
+Added Pin To Net: NetName=PWM0 Pin=U1-18
+Added Net: Name=PWM0
+Added Pin To Net: NetName=SPI0_CLK Pin=U1-20
+Added Net: Name=SPI0_CLK
+Added Pin To Net: NetName=SPI0_MISO Pin=U1-19
+Added Net: Name=SPI0_MISO
+Added Pin To Net: NetName=SPI0_MOSI Pin=U1-1
+Added Net: Name=SPI0_MOSI
+Added Pin To Net: NetName=SWCLK Pin=U1-4
+Added Net: Name=SWCLK
+Added Pin To Net: NetName=SWDIO Pin=U1-6
+Added Net: Name=SWDIO
+Added Pin To Net: NetName=U0_TX Pin=U1-16
+Added Net: Name=U0_TX
+Added Pin To Net: NetName=U2_RX Pin=U1-13
+Added Net: Name=U2_RX
+Added Pin To Net: NetName=U2_TX Pin=U1-17
+Added Net: Name=U2_TX
+Added Pin To Net: NetName=VCC_3V3 Pin=C1-2
+Added Pin To Net: NetName=VCC_3V3 Pin=C2-2
+Added Pin To Net: NetName=VCC_3V3 Pin=R1-2
+Added Pin To Net: NetName=VCC_3V3 Pin=U1-8
+Added Pin To Net: NetName=VCC_3V3 Pin=U2-2
+Added Pin To Net: NetName=VCC_3V3 Pin=U2-4
+Added Net: Name=VCC_3V3
+Added Pin To Net: NetName=VCC Pin=C3-2
+Added Pin To Net: NetName=VCC Pin=C4-2
+Added Pin To Net: NetName=VCC Pin=U2-3
+Added Net: Name=VCC
+Added Class: Name=rtl_001_expansion_v1.0
